@@ -16,9 +16,6 @@ def predict():
     feature = [np.array(float_features)]
     prediction = model.predict(feature)
     #output = round(prediction[0],2)
-    #output = {0: 'tidak terkena gagal jantung', 1:'terkena gagal jantung'}
-    #output = round(prediction[0],2)
-    #return render_template("index.html", prediction_text = "Pasien {}".format(output[prediction[0]]))
     return render_template("index.html", prediction_text = "${}".format(prediction))
 
 
